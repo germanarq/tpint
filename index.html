@@ -22,6 +22,7 @@
     </head>
 
     <body>
+      
              <div class="enlinea">
                <div class="ancho colorfondo navbar-expand-sm navbar-expand-md"> 
                   <a class="navbar-brand margen-izq fw-bold" href="#">
@@ -32,12 +33,16 @@
                     <a class="nav-link active whitetext" aria-current="page" href="#">La conferencia</a>
                     <a class="nav-link link-secondary" href="#">Los oradores</a>
                     <a class="nav-link link-secondary" href="#">El lugar y la fecha</a>
-                    <a class="nav-link link-secondary" href="#oradores">Conviértete en orador</a>
+                    <a class="nav-link link-secondary" href="#oradores" onclick="mostrarformOradores();">Conviértete en orador</a>
                     <a class="nav-link link-success" href="#">Comprar tickets</a>
                  </nav>
                </div>
-             </div>
+             </div> 
 
+        
+              
+           </div>
+        
          
          <!---->
 
@@ -107,7 +112,8 @@
             </div>
           </div>
 
-                  <div class="contenerCarro">  <!--d-flex justify-content-center mb-3-->
+<!---->
+                  <div class="contenerCarro">  
                         <div class="cajon1 mb-3 hiddenimg">
                           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -136,7 +142,7 @@
                           </div>
                       </div>
                    </div>
-
+     <div id="formularioOradores">             
         <div class="enlinea">
             <div class="badge text-center" style="width: 38rem;">
                 <h6 class="card-title text-center text-light-emphasis ">CONVIÉRTETE EN UN</h6>
@@ -145,6 +151,7 @@
             </div>
         </div>
 
+       
         <div class="centrarForm">
           <div class="cajaForm">
             <a name="formulario" id="oradores"></a>
@@ -168,19 +175,25 @@
               <p class="text-start fst-italic fs-6">Recuerda incluir un titulo para tu charla </p><br> 
                   
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-colorpersonal" type="button">Button</button>
+                <button class="btn btn-colorpersonal" type="button" onclick="ocultarformOradores();">Button</button>
               </div> 
             </form>
           </div>
         </div>
+      </div>
+
+      <div id="gracias">
+        <h2 style="text-align: center">-Enviado-. Muchas Gracias por su Interes!!</h2>
+      </div>
  <!--
  -->
+        <!-- script de javascript    -->
+        <script src="index-tpi.js"></script>
          <!-- esto script de Bootstrap debe ir al pie del body siempre-->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
+       
 
-  <!-- 
-        -->
           <footer class="py-3 my-4 backColor">
             <ul class="nav justify-content-center pb-3 mb-3 ">
               <li class="nav-item"><a href="#" class="nav-link px-2 whitetext">Preguntas frecuentes</a></li>

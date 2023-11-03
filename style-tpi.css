@@ -24,12 +24,13 @@ body {
     width: 100%;
     height: 25rem;
 }
-.centrarOradores{
+.centrarOradores, .centrarCategorias{
     display: flex;
     flex-direction: row;
     padding-left: 20rem;
     padding-right: 20rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     justify-content: center;
     align-items: flex-start;
 }
@@ -80,6 +81,9 @@ body {
     text-align: left;
 
 }
-#formularioOradores, #gracias{
+#formularioOradores, #gracias, #ventaTickets, #enviado{
     display:none;
+}
+#mostrarImporte, #importe{
+    background-color: #0dcaf0;
 }

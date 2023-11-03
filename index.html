@@ -23,27 +23,22 @@
 
     <body>
       
-             <div class="enlinea">
-               <div class="ancho colorfondo navbar-expand-sm navbar-expand-md"> 
-                  <a class="navbar-brand margen-izq fw-bold" href="#">
-                  <img src="./img/codoacodo.png" alt="img codoacodo"  height="70" class="d-inline-block img-responsive">Conf BS AS</a>
-               </div>
-               <div class="ancho colorfondo"> 
-                  <nav class="nav justify-content-center navbar-expand-sm navbar-expand-md">
-                    <a class="nav-link active whitetext" aria-current="page" href="#">La conferencia</a>
-                    <a class="nav-link link-secondary" href="#">Los oradores</a>
-                    <a class="nav-link link-secondary" href="#">El lugar y la fecha</a>
-                    <a class="nav-link link-secondary" href="#oradores" onclick="mostrarformOradores();">Conviértete en orador</a>
-                    <a class="nav-link link-success" href="#">Comprar tickets</a>
-                 </nav>
-               </div>
-             </div> 
+     <div class="enlinea">
+        <div class="ancho colorfondo navbar-expand-sm navbar-expand-md"> 
+            <a class="navbar-brand margen-izq fw-bold" href="#">
+            <img src="./img/codoacodo.png" alt="img codoacodo"  height="70" class="d-inline-block img-responsive">Conf BS AS</a>
+        </div>
+        <div class="ancho colorfondo"> 
+            <nav class="nav justify-content-center navbar-expand-sm navbar-expand-md">
+               <a class="nav-link active whitetext" aria-current="page" href="#">La conferencia</a>
+               <a class="nav-link link-secondary" href="#">Los oradores</a>
+               <a class="nav-link link-secondary" href="#">El lugar y la fecha</a>
+               <a class="nav-link link-secondary" href="#oradores" onclick="mostrarformOradores();">Conviértete en orador</a>
+               <a class="nav-link link-success" href="#ventaTickets" onclick="mostrarformTickets();">Comprar tickets</a>
+            </nav>
+        </div>
+     </div> 
 
-        
-              
-           </div>
-        
-         
          <!---->
 
              <div class="card bg-dark text-white cajaimg">
@@ -56,13 +51,10 @@
                      nivel que tenmos para ti. Te esperamos!</p><br>
                   <div>
                   <div>  
-                      <a class="btn btn-outline-light btn-sm" href="#oradores" role="button">Quiero ser orador</a>
-                      <a class="btn btn-success btn-sm" href="#" role="button">Comprar Tickets</a>
+                      <a class="btn btn-outline-light btn-sm" href="#oradores" role="button" onclick="mostrarformOradores();">Quiero ser orador</a>
+                      <a class="btn btn-success btn-sm" href="#ventaTickets" role="button" onclick="mostrarformTickets();">Comprar Tickets</a>
                   </div>
-              </div>
-
-
-
+             </div>
 
           </div> 
              </div>
@@ -142,6 +134,7 @@
                           </div>
                       </div>
                    </div>
+
      <div id="formularioOradores">             
         <div class="enlinea">
             <div class="badge text-center" style="width: 38rem;">
@@ -150,8 +143,6 @@
                 <h6 class="card-title text-center text-dark">Anótate como orador para dar una <u>charla ignite</u>. Cuéntanos de qué quieres hablar!</h6>
             </div>
         </div>
-
-       
         <div class="centrarForm">
           <div class="cajaForm">
             <a name="formulario" id="oradores"></a>
@@ -185,8 +176,110 @@
       <div id="gracias">
         <h2 style="text-align: center">-Enviado-. Muchas Gracias por su Interes!!</h2>
       </div>
- <!--
- -->
+      <div id="enviado">
+        <h2 style="text-align: center">-Realizado-. Muchas Gracias por su Compra!!</h2>
+      </div>
+      
+    <div id="ventaTickets">  
+        <div class="centrarCategorias">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card border-primary">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Estudiante</h5>
+                  <p class="card-text text-center">Tienen un descuento</p>
+                  <h6 class="card-text text-center text-dark">80%</h6>
+                  <p class="card-text text-center"><small class="text-muted">*presentar documentación</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-primary">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Trainee</h5>
+                  <p class="card-text text-center">Tienen un descuento</p>
+                  <h6 class="card-text text-center">50%</h6>
+                  <p class="card-text" text-center><small class="text-muted">*presentar documentación</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-warning">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Junior</h5>
+                  <p class="card-text text-center">Tienen un descuento</p>
+                  <h6 class="card-text text-center">15%</h6>
+                  <p class="card-text text-center"><small class="text-muted">*presentar documentación</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+        
+       <div class="enlinea">
+          <div class="badge text-center" style="width: 38rem;">
+              <h6 class="card-title text-center text-light-emphasis">VENTA</h6>
+              <h3 class="card-title text-center text-dark">VALOR DE TICKET $200</h3>
+          </div>
+       </div>
+       <div class="centrarForm">
+        <div class="cajaForm">
+          <a name="formulario" id="ventas"></a>
+          <form id="formularioInput">
+            <div class="form-row row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-sm " id="nombre" placeholder="Nombre">
+                  </div>
+              </div> <!---->
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-sm" id="apellido" placeholder="Apellido">
+                  </div><br>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-sm" id="email" placeholder="Correo">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control-plaintext" placeholder="Cantidad">
+                  <input type="text" class="form-control form-control-sm " id="cantidad" placeholder="Cantidad">
+                </div>
+              </div> 
+            
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control-plaintext" placeholder="Categoría">
+                   
+                  <select class="form-select form-select-sm" id="categorias" onchange="categoriaSelecta();">
+                    <option value="0">Elija opcion</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                  </select>
+                </div>
+              </div> 
+            </div><br>
+           
+
+            <div class="input-group mb-3">
+              <span id="mostrarImporte" class="input-group-text"> <strong>Total a Pagar: $</strong> </span>
+              <input type="text" id="importe" class="form-control text-dark">
+            </div>
+    
+            <div class="d-grid">
+              <div class="gap-2 d-md-flex justify-content-md-center">
+                <button class="btn btn-colorpersonal btn-sm w-50" type="button" onclick="borrarformTickets();" >Borrar</button>
+                <button class="btn btn-colorpersonal btn-sm w-50 " type="button" onclick="ocultarformTickets();">Resumen</button>
+              </div>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+ 
         <!-- script de javascript    -->
         <script src="index-tpi.js"></script>
          <!-- esto script de Bootstrap debe ir al pie del body siempre-->

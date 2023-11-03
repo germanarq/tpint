@@ -253,7 +253,7 @@
                 <div class="form-group">
                   <input type="text" class="form-control-plaintext" placeholder="Categoría">
                    
-                  <select class="form-select form-select-sm" id="categorias" onchange="categoriaSelecta();">
+                  <select class="form-select form-select-sm" id="categorias">
                     <option value="0">Elija opcion</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Trainee</option>
@@ -272,7 +272,7 @@
             <div class="d-grid">
               <div class="gap-2 d-md-flex justify-content-md-center">
                 <button class="btn btn-colorpersonal btn-sm w-50" type="button" onclick="borrarformTickets();" >Borrar</button>
-                <button class="btn btn-colorpersonal btn-sm w-50 " type="button" onclick="ocultarformTickets();">Resumen</button>
+                <button class="btn btn-colorpersonal btn-sm w-50 " type="button" onclick="categoriaSelecta();">Resumen</button>
               </div>
             </div> 
           </form>

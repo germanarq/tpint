@@ -49,6 +49,9 @@ function categoriaSelecta(){
                 importePagar = cant-(cant*0.15);
                 document.getElementById("importe").value = importePagar;
                 break;
+            default:
+                alert ("Seleccione una Categoria");
+                break;
         }
     }
    
